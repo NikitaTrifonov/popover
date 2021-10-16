@@ -1,0 +1,48 @@
+.header_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100px;
+}
+
+.ident {
+    height: 30%;
+    width: 100%;
+    background-color: #89abc6;
+}
+
+.content {
+    height: 70%;
+    display: flex;
+    background-color: #baddf9;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 26px;
+}
+
+.icon_container {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+}
+
+.eventCount {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    border-radius: 20px;
+}

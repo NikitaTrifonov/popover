@@ -1,0 +1,42 @@
+.popover_wrapper {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    align-self: end;
+    margin-right: 25px;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #baddf9;
+}
+
+.popover_body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #baddf9;
+    border-radius: 5px;
+    background-color: #edffff;
+}
+
+.event {
+    padding: 0 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.date {
+    line-height: 0.8;
+}
