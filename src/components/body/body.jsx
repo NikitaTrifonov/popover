@@ -1,8 +1,9 @@
 import React from "react";
-import { Popover } from "../popover/popover";
+import { PopoverContainer } from "../popover/popoverContainer";
 import style from "./body.module.css";
 
 export const Body = (props) => {
-    const isShowPopover = true;
-    return <div className={style.body_wrapper}>{isShowPopover && <Popover />}</div>;
+    const { isShowPopover } = props;
+
+    return <div className={style.body_wrapper}>{isShowPopover && <PopoverContainer />}</div>;
 };

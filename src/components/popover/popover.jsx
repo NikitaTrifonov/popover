@@ -3,22 +3,15 @@ import { getEventTimeMessage } from "../../common/dateUtils.js";
 import style from "./popover.module.css";
 
 export const Popover = (props) => {
-    const events = [
-        { date: new Date(2021, 9, 16, 22, 0, 0), text: "Event!" },
-        { date: new Date(2021, 9, 17, 1, 0, 0), text: "Event!" },
-        { date: new Date(), text: "Event!" },
-        { date: new Date(), text: "Event!" },
-        { date: new Date(), text: "Event!" },
-        { date: new Date(), text: "Event!" },
-    ];
+    const events = props.events;
 
     return (
         <div className={style.popover_wrapper}>
             <div className={style.triangle}></div>
             <div className={style.popover_body}>
-                {events.map((e, i) => (
-                    <div key={i} className={style.event}>
-                        <div className={style.title}>{e.text}</div>
+                {events.map((e) => (
+                    <div key={e.id} className={style.event}>
+                        <div className={style.title}>{e.title}</div>
                         <div className={style.date}>{getEventTimeMessage(e.date)}</div>
                     </div>
                 ))}
